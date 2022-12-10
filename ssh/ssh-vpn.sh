@@ -1,6 +1,4 @@
 #!/bin/bash
-# By Akbar Maulana
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -16,28 +14,19 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
-exit 0
-fi
+
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/ssh"
+akbarvpn="raw.githubusercontent.com/owl64/Script-SSH-dan-VMES/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/xray"
+akbarvpnn="raw.githubusercontent.com/owl64/Script-SSH-dan-VMES/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/trojango"
+akbarvpnnn="raw.githubusercontent.com/owl64/Script-SSH-dan-VMES/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/owl64/Script-SSH-dan-VMES/main/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -51,10 +40,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=akbarstorevpn
-organizationalunit=akbarstorevpn
-commonname=akbarstorevpn
-email=akbarssh21@gmail.com
+organization=Owl64VPN
+organizationalunit=Owl64VPN
+commonname=Owl64VPN
+email=hermawandi64@gmail.com
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
