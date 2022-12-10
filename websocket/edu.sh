@@ -1,6 +1,5 @@
 #!/bin/bash
 # Proxy For Edukasi & Imclass
-# My Telegram : https://t.me/Akbar218
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -16,18 +15,8 @@ LIGHT='\033[0;37m'
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
 IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Facebook : https://m.facebook.com/lis.tio.718"
-echo -e "${NC}${LIGHT}WhatsApp : 081545854516"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/Akbar218"
-exit 0
-fi
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/AkbarStoreVPN/scriptvps/main/websocket"
+akbarvpn="raw.githubusercontent.com/owl64/Script-SSH-dan-VMES/main/websocket"
 
 # Getting Proxy Template
 wget -q -O /usr/local/bin/websocket https://${akbarvpn}/websocket.py
@@ -36,8 +25,8 @@ chmod +x /usr/local/bin/websocket
 # Installing Service
 cat > /etc/systemd/system/websocket.service << END
 [Unit]
-Description=Python Proxy Mod By Akbar Maulana
-Documentation=https://t.me/Akbar218
+Description=Python Proxy Mod By Owl64
+Documentation=https://t.me/Owl64
 After=network.target nss-lookup.target
 
 [Service]
@@ -64,8 +53,8 @@ chmod +x /usr/local/bin/ws-ovpn
 # Installing Service
 cat > /etc/systemd/system/ws-ovpn.service << END
 [Unit]
-Description=Python Proxy Mod By LamVpn
-Documentation=https://t.me/LamVpn
+Description=Python Proxy Mod By Owl64
+Documentation=https://t.me/Owl64
 After=network.target nss-lookup.target
 
 [Service]
