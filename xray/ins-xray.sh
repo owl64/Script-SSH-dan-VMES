@@ -1,5 +1,4 @@
 #!/bin/bash
-# @ Copyrigt 2021 By Akbar Maulana
 # =====================================================
 
 # Color
