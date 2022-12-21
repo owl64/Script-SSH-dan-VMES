@@ -11,10 +11,6 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Getting
-MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvps.txt | grep $MYIP )
-clear
 echo start
 sleep 0.5
 source /var/lib/crot/ipvps.conf
