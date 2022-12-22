@@ -17,11 +17,11 @@ IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvp
 
 clear
 apt install jq curl -y
-DOMAIN=vpnku.tech
+DOMAIN=sshvip.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.vpnku.tech
-CF_ID=akbarstore21@yahoo.com
-CF_KEY=1170c2d87638adb12ad8f0f4b8c599c545ada
+SUB_DOMAIN=sg-${sub}.sshvip.my.id
+CF_ID=hermawandi64@gmail.com
+CF_KEY=f8e5a0b0af578a98e86998188422d1dfc6f33
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
