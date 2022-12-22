@@ -12,9 +12,7 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/AkbarStoreVPN/perizinan/main/ipvps.txt | grep $MYIP )
-clear
+
 IP=$(wget -qO- ipinfo.io/ip);
 date=$(date +"%Y-%m-%d")
 clear
@@ -53,7 +51,7 @@ echo -e "================================="
 echo -e "IP VPS        : $IP"
 echo -e "Link Backup   : $link"
 echo -e "================================="
-echo -e "Script By LamVpn"
+echo -e "Script By owl64"
 echo ""
 echo -e "If you want to restore data, please enter the link above"
 echo ""
