@@ -85,7 +85,7 @@ rm -f /root/ohp.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://t.me/Akbar218
+Documentation=https://t.me/owl64
 
 [Service]
 Type=oneshot
